@@ -22,4 +22,8 @@ re: fclean all
 logs:
 	docker-compose logs -f
 
+# Open a visual data base panel ... like excel
+studio:
+	docker exec -it chess_backend npx prisma studio
+
 .PHONY: all up up-d down clean fclean re logs
